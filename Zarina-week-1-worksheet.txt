@@ -1,0 +1,53 @@
+1. I plan to exhibit professionalism at Techtonica by being respectful to my peers, Techtonica staff and hosts. 
+Also, to show professionalism I will stay self-motivated and responsible for my own actions, studying, asking questions and making sure I complete and understand the tasks and what I'm learning. 
+If any conflicts occur I need to take care of them respectfully by listening and understanding the opposite sideand try to find a compromise by working together to solve the problem. And finally, I will always need to keep in mind growth mindset and opportunities for personal growth.
+
+In a full-time engineering setting most of it would be similar, except the stakes will be a bit higher since it will be a full-time role where the company's product as well as my salary and benefits will be at stake. Additionally, the deadlines will be stricter that will affect not only the company's reputation but also millions of users of the product. So, by being responsible and finishing all the deadlines on time while staying respectful to the colleagues will play a big role of being a  good responsible employer/team player. 
+
+2.  If I'd be an hour late tomorrow morning I'd make sure everybody knows that. I'd use the available resources such as Slack and email to inform the staff and peers of my late arrival and its reason. Additionally, I'd text a peer friend to let her know that I'm running late just in case so that she can inform the right people as well. 
+
+3. I'd try to do my best to finish my assigned part of the project on time. However, if for whatever reason I'd be running late, then I'd let my group know as soon as I realize it to make sure everyone is aware of it and maybe even ask for their help if needed. 
+
+4. I'm a visual learner.I remember and understand a new subject faster if I see it written down or see it explained in pictures or some sort of graphics. Additionally, taking notes helps to remember new information better, so I always try to take notes if I learn something new or if someone explains something to me/asnwers my question.
+
+5. A growth mindset is when one understands his/her abilities can be developed; when one belives he/she can learn a new skill that seemed impossible or too challenging before. 
+People are born differently, with different genes that benefit them in one way or the other, which make some people be a bit better or faster at certain things than others. However, those with a growth mindset believe that one can always improve, catch up, or even surpass others’ natural talents. 
+
+6. I'm using Mac OS. Two other popular are Windows and Linux. 
+
+7. Whenever I download things, the version I download is operating system-dependent. It manages the computer's memory and processes, as well as all of its software and hardware. It also allows you to communicate with the computer without knowing how to speak the computer's language. Without an operating system, a computer is useless.
+
+8. If I'd be stuck on a coding problem I'd first try to use all the available resources and do some research first. I'd use Google, Stack Overflow, YouTube, Techtonica slides, and so on to find a solution. If those won't help, I'd try to look over the problem again and try to catch a pattern. I'd try to spend 15-20 mins to find the solution myself. If I'd feel like I can't solve it then I'd ask my peer/colleague for help.
+
+9. I plan to attend a meetup/networking event or if possible a conference where I can meet some new people. I'd ask for their business card to reach out to them after the event or if they won't have one then ask if I can add them on LinkedIn to stay in touch. Usually I'd scan a QR code from their LinkedIn app to make it faster. I'd follow up with my new contact the next day to express that I enjoyed meeting them and would like to stay in touch.
+
+10. Effective body language includes the following: 
+- an open relaxed posture with arms open and not crossed. Sit or stand upright and place hands by your side - it communicates a friendly open impression and that you're open to have a conversation with that person.
+- firm handshake - it communicates confidence. 
+- good eye contact maintained throughout the whole conversation as well as relaxed facial expression - it communicates that you're sincere and interested in a conversation. 
+- occasional nodding as a sign of understanding the topic, listening to the person you're talking to and engaging in a conversation.
+
+11. Effective word choice would be a professional language where there is no profanity, no insults or racists jokes or any other cultural or gender jokes that might offend somebody and be inappropriate at work and outside of work. 
+Some words of support or encouragement for a newly hired employee or a junior developer/intern who is worried at their first day of work would be a good way to encourage and welcome someone. For example, saying something like: "Welcome Katie. We are happy you're a part of our team. I'm sure you'll do great things here. Feel free to reach out to me if you need any help to solve  problem or if you feel stuck. Would be happy to help." Kind words of support and encouragement will always go a long way. 
+
+12.  To build trust in a team, one can do the following:
+-  give their employees freedom and flexibility to work on their assigned project. Micromanagement will only hurt the trust and can also be annoying.
+- listen to employees feedback, concerns and try to find ways to implement those feedback to improve the culture and work environment. 
+- let employees experiment, learn, and fail through the process. This is part of their growth, and if the employer supports that, the employees' trust also grows. 
+
+13 and 14. Using the internet, computers connect and communicate with one another using Transmission Control Protocol/Internet Protocol, which dictates what each computer must do to transmit data, when to transmit data and how to transmit that data. It also states how to receive data in the same manner. To connect to the Internet and other computers on a network, a computer must have network interface card installed. 
+
+Computers can be connected to each other through multiple ways: Fiber optic cables(Signal is sent via light through the cables), Copper wire(Signal sent via electricity), Radio waves(Wifi).
+
+15 and 16. Internet Protocol(IP). Each computer has its IP address which is used to find each other and communicate with each other, just like a mailing address for people. Also, DNS (Domain Name System), associates names with the corresponding addresses. The computer uses the DNS to look up domain names and get the associated IP address. 
+ 
+17. Data to be sent is broken up into “packets” that can take different routes to the same destination. Routers are computers that direct packets + choose the route to send the data.
+Fault-tolerant - even if some computers/wires are broken, there will be a path; TCP (Transmission Control Protocol) which defines format of packets and ensures that all packets are received correctly. Scalable system. Also, HTTPS is more secure that HTTP and it's always helpful to look for a "lock" sign at the top of URL to see whether a website is secure or not especially if a user is going to shop on that website. 
+
+
+
+
+
+
+
+ 
