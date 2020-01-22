@@ -16,9 +16,11 @@ if(isLearning){
     console.log("Pretty sure you are learning....");
 }
 
+
 Question A: What should the above code console.log?
 //Answer A: 
 console.log("Keep it up!");
+
 
 Question B: Why do we not need to specify if(isLearning === true)? Why does if(isLearning) work on its own? */
 //Answer A: Because we already mentioned above that isLearning is equal to true, that's why there was no need to mention it again.
@@ -41,11 +43,12 @@ if(firstVariable){
 */
 
 
+
 //Question A: What should the above code console.log? Why?
 //AnswerA: third. 
 
 //Question B: What is the value of firstVariable when it is initialized?
-//AnswerB: first
+//AnswerB: undefined (because it doesn't have a value). 
 
 //Question C: Is the value of firstVariable a "truthy" value? Why?
 //Answer C: No. It's a falsy variable, because it has an empty string. 
@@ -58,8 +61,15 @@ if(firstVariable){
 
 
 
+
 /* Exercise 3: Write an if statement that console.log's "Over 0.5" if Math.random returns a 
-number greater than 0.5. Otherwise console.log "Under 0.5".
+number greater than 0.5. Otherwise console.log "Under 0.5". */
+if (Math.random() > .5) {
+    console.log("over .5");
+} else {
+    console.log("under .5");
+} 
+//over .5
 
 
 
