@@ -1,3 +1,6 @@
+//Rough draft. Some challenges are complete while others need to be debugged. 
+//The rest of the challenges need to be finished
+
 /*Challenge 1: Convert Inches to Meters.
 Define a function called metersToInches that takes an input of the number of meters and 
 outputs the result of the number of inches.
@@ -26,12 +29,14 @@ console.log("Hello World");
 
 loopThrough();
 
+
 /* Challenge 3: Number sum.
 Define a method called calculateSum to calculate the sum all the digits from 0 to an input number. */
 
 calculateSum = [0, 5, 2, 5, 4].reduce(function(a,b) {
       return a + b
     }, 0)
+
 
 /* Challenge 4: FizzBuzz.
 Write a function called fizzbuzz that prints each number from 1 to the input on a new line.
@@ -54,12 +59,10 @@ for (let i = 1; i < newInput; i++) {
 }
 fizzbuzz(17);
 
+
 /* Challenge 5: Calculate Factorial Number.
 A factorial number is the concept in math by value of multiplying numbers by each consecutively smaller number.
 For example, the value of 3 factorial, is 6. */
-
-
-
 
 
 
@@ -124,14 +127,6 @@ common(1, 5);
 /* Challenge 8: Object Keys and Values.
 Create an object with two key-value pairs. Log that object to the console.
 Delete the first key-value pair in the object. Log that object to the console again. The first key-value pair should be gone. */
-
-
-let myItems = {
-name: "phone",
-model: "iPhone",
-
-}
-
 
 
 
