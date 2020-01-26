@@ -66,8 +66,17 @@ fizzbuzz(17);
 A factorial number is the concept in math by value of multiplying numbers by each consecutively smaller number.
 For example, the value of 3 factorial, is 6. */
 
+// n! = n * (n - 1) * (n - 2) * ...*1
+// 3! = 3 * (3 - 1) * 1
 
-
+function factorial(n) {
+    let answer = 1;
+    for (let i = 1; i <= n; i++) {
+      answer = answer * i;
+    }
+    return answer;
+  }
+factorial(5);
 
 
 /* Challenge 6: Switch Statements. 
