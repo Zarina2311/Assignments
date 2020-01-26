@@ -284,22 +284,3 @@ const power = function(base, exponent) {
     };
     console.log(power(2, 10));
     // → 1024
-
-
-
-    /* Another exercise:
-Create a function called printCuteAnimals that expects an array to be passed in as an argument. You can name the function parameter whatever you like. When you pass the array to the function, it should contain strings, and the strings should be types of animals you think are cute.
-
-Your function should:
-First print the entire array and its length.
-Print the array after you have called the .pop() method on it.
-Concatenate another array of animal names onto the exisitng array. 
-Print the array again and its new length.
-Return the array.*/
-
-
-function printCuteAnimals(animals) {
-    return animals;
-    }
-    
-    printCuteAnimals(["bunny", "puppy"]);
