@@ -78,7 +78,6 @@ function factorial(n) {
   }
 factorial(5);
 
-
 /* Challenge 6: Switch Statements. 
 Using a switch statement, write a function called sleep_in(weekday, vacation) with these criteria: 
 The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. 
@@ -89,29 +88,18 @@ sleep_in(False, False) → True
 sleep_in(True, False) → False
 sleep_in(False, True) → True */
 
-
 function sleep_in(weekday, vacation) {
-let weekday = "Tuesday";
-let vacation = "Hawaii";
-
-switch (sleep_in(weekday, vacation)) {
-    case sleep_in(!weekday, !vacation):
-        console.log("True");
-        break;
-    case sleep_in(weekday, !vacation):
-        console.log("False");
-        break;
-    case sleep_in(!weekday, vacation):
-        console.log("True");
-        break;
-    default:
-        console.log("Sleep in on weekend.");
-        break;
-}
-//sleep_in("Monday", "Italy");
+    switch (!weekday || vacation) {
+        case true:
+            return true;
+        default:
+            return false;
+    }
 }
 
-
+sleep_in(false, false); // true
+sleep_in(true, false); // false
+sleep_in(false, true); // true
 
 /* Challenge 7: Accessing Arrays.
 Write a function called common(a, b) with these criteria: Given 2 arrays of ints, a and b, return True if they have
@@ -122,25 +110,31 @@ common([1, 2, 3], [7, 3]) → True
 common([1, 2, 3], [7, 3, 2]) → False
 common([1, 2, 3], [1, 3]) → True */
 
-let myArray = [[1,2,3], [7,3]];
 function common(a, b) {
-for (let i = 1; i < myArray.length; i++) {
-if (i === a || i === b) {
-return true;
-} else {
-    return false; 
-} 
+    if (a[0] === b[0] || a[a.length - 1] === b[b.length - 1]) {
+        return true;
+    } else {
+        return false;
+    }
 }
-}
-common(1, 5);
 
-
+common([1, 2, 3], [7, 3]);
+common([1, 2, 3], [7, 3, 2]);
+common([1, 2, 3], [1, 3]);
 
 /* Challenge 8: Object Keys and Values.
 Create an object with two key-value pairs. Log that object to the console.
 Delete the first key-value pair in the object. Log that object to the console again. The first key-value pair should be gone. */
 
+let exampleTwo = {
+    name: "Gilfoyle",
+    age: 35, 
+};
 
+console.log(exampleTwo);
+
+delete exampleTwo.name;
+console.log(exampleTwo);
 
 
 
