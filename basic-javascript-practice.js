@@ -1,12 +1,11 @@
-//Rough draft. Some challenges are complete while others need to be debugged. 
-//The rest of the challenges need to be finished
-
-/*Challenge 1: Convert Inches to Meters.
+/* Challenge 1: Convert Inches to Meters.
 Define a function called metersToInches that takes an input of the number of meters and 
 outputs the result of the number of inches.
 
 Hint:1 meter equals 39.3701 inches. */
 
+
+// runtime complexity is O(1)
 function metersToInches (meters, inches) {
     return meters * inches;
 }
@@ -18,6 +17,7 @@ metersToInches(1.5, 39.3701);
 Write a function named loopThrough that takes an argument that is a number and loops 
 through and displays a message “Hello World” that number of times. */
 
+// runtime complexity is O(x) or O(N)
 function loopThrough (x) {
     for (let i = 0; i < x; i ++) {
         console.log("Hello World");
@@ -29,6 +29,8 @@ loopThrough(5);
 
 /* Challenge 3: Number sum.
 Define a method called calculateSum to calculate the sum all the digits from 0 to an input number. */
+
+// runtime complexity is O(n) or O(N)
 function calculateSum(n) {
     let result = 0;
     for (let i = 0; i <= n; i++) {
@@ -46,6 +48,7 @@ For each multiple of 3, print "Fizz" instead of the number.
 For each multiple of 5, print "Buzz" instead of the number.
 For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number. */
 
+// runtime complexity is O(newInput) or O(N)
 function fizzbuzz (newInput) {
     for (let i = 1; i < newInput; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
@@ -69,6 +72,7 @@ For example, the value of 3 factorial, is 6. */
 // n! = n * (n - 1) * (n - 2) * ...*1
 // 3! = 3 * (3 - 1) * 1
 
+// runtime complexity is O(n) or O(N)
 function factorial(n) {
     let answer = 1;
     for (let i = 1; i <= n; i++) {
@@ -88,6 +92,7 @@ sleep_in(False, False) → True
 sleep_in(True, False) → False
 sleep_in(False, True) → True */
 
+// runtime complexity is O(1)
 function sleep_in(weekday, vacation) {
     switch (!weekday || vacation) {
         case true:
@@ -110,6 +115,7 @@ common([1, 2, 3], [7, 3]) → True
 common([1, 2, 3], [7, 3, 2]) → False
 common([1, 2, 3], [1, 3]) → True */
 
+// runtime complexity is O(1)
 function common(a, b) {
     if (a[0] === b[0] || a[a.length - 1] === b[b.length - 1]) {
         return true;
@@ -126,6 +132,7 @@ common([1, 2, 3], [1, 3]);
 Create an object with two key-value pairs. Log that object to the console.
 Delete the first key-value pair in the object. Log that object to the console again. The first key-value pair should be gone. */
 
+// O(1)
 let exampleTwo = {
     name: "Gilfoyle",
     age: 35, 
@@ -137,7 +144,6 @@ delete exampleTwo.name;
 console.log(exampleTwo);
 
 
-
 /* Challenge 9: Mutating Objects.
 Create an array of objects with at least 2 key value pairs. The objects should all have the same keys, 
 and the array should contain at least 3 objects. Create a function that accepts the array of objects as an argument. 
@@ -146,8 +152,25 @@ After printing the values in step 3, change the values of the second key in ever
 Prove the change worked by printing the second key in each object to the console, which should show the new value. 
 Use bracket-notation to access the values this time. */
 
+let myArray = [
+    {city: "San Francisco", state: "California"},
+    {city: "Nashville", state: "Tennessee"},
+    {city: "Norfolk", state: "Nebraska"}
+];
+
+// runtime complexity is O(myArray.length) or O(N)
+function geography (myArray) {
+    for (let i = 0; i < myArray.length; i++) {
+        console.log(myArray[i].state);
+        myArray[i].state = "Florida";
+        console.log(myArray[i]["state"]);
+    }
+}
+
+geography(myArray);
 
 
 /* Challenge 10: Determine Runtime Complexity.
 At the top your document for each challenge, state the runtime complexity for that function. */
 
+//done
