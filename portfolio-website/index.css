@@ -1,0 +1,60 @@
+/*Background color of the web page*/
+body {
+    background-color: rgba(247, 172, 11, 0.884);
+    }
+
+/*Styling for the header*/
+h1 {
+    font-size: 60px;
+    font-family: 'Pacifico', cursive;
+    color:rgb(248, 245, 245);
+    margin-left: 70px;
+    margin-bottom: 0;
+    margin-top: 40px;
+   }
+
+/*Styling for the image*/
+img {
+    float: right;
+    padding-right: 90px;
+  }
+
+  /*Styling for the text*/   
+p {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    color:rgb(241, 246, 248); 
+    margin-left: 90px;
+    margin-top: 40px;   
+    width: 650px;
+    font-weight: bold;
+  }
+
+  /*Styling Navbar*/
+.nav-front-page ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(247, 172, 11, 0.884); 
+  }
+ /*Moving NavBar tabs to the right*/
+.nav-front-page li {
+    float:right;
+}
+
+/*Navbars block, after hover, coloring*/
+li a {
+    display: block;
+    color: rgba(0, 0, 0, 0.308);
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+  }
+
+/* Change the link color to white on hover */
+li a:hover {
+    text-decoration:none;
+    color:rgb(247, 172, 11, 0.884); 
+    background-color: #FFFFFF;
+  }
