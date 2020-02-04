@@ -40,7 +40,7 @@ class EventRecommender {
         let allEvents = this.events.filter(function (event) {
             return event.date === date;
         });
-            this.events = allEvents;
+            return allEvents;
     }
     
     findEventsbyCategory(category){
@@ -48,7 +48,7 @@ class EventRecommender {
         let eventsByCategory = this.events.filter(function(event) {
             return event.category === category;
         });
-            this.events = eventsByCategory;
+            return eventsByCategory;
     }
 }
 
