@@ -25,6 +25,8 @@ class EventRecommender {
         this.users = usersLeft;
     }
    
+    //Need to check these: 
+
     deleteEvent(id) {
     // Deletes the Event from the system
         let eventsLeft = this.events.filter(function (event) {
@@ -33,14 +35,20 @@ class EventRecommender {
             this.events = eventsLeft;
     }
 
-    findEventsByDate(){
+    findEventsByDate(date){
     // Returns all events on a given date
-
+        let allEvents = this.events.filter(function (event) {
+            return event.date === date;
+        });
+            this.events = allEvents;
     }
     
-    findEventsbyCategory(){
+    findEventsbyCategory(category){
     // Returns all events in a given category
-    
+        let eventsByCategory = this.events.filter(function(event) {
+            return event.category === category;
+        });
+            this.events = eventsByCategory;
     }
 }
 
@@ -61,5 +69,7 @@ class Event {
     }
 }
 
-
-
+// Jasmine test part
+if (typeof module != 'undefined'){
+    module.exports = { EventRecommender, User,  Event} 
+}
