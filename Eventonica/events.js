@@ -24,8 +24,6 @@ class EventRecommender {
         });
         this.users = usersLeft;
     }
-   
-    //Need to check these: 
 
     deleteEvent(id) {
     // Deletes the Event from the system
