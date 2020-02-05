@@ -1,6 +1,6 @@
 /*Background color of the web page*/
 body {
-    background-color: rgba(221, 241, 214, 0.925);
+    background-color: rgba(204, 223, 197, 0.925);
     margin-left: 100px;
 }
 
@@ -9,20 +9,16 @@ h1 {
     font-size: 50px;
     font-family: fantasy;
     color:rgb(55, 100, 13);
-    margin-left: 400px;
-
 }
 
 /* Header Two */
 h2 {
-    /*font-size: 50px;*/
     font-family: cursive;
     color:rgb(50, 87, 16);
 }
 
 /* Header Three */
 h3 {
-    /*font-size: 50px;*/
     font-style: italic;
     color:rgb(83, 134, 35);
 }
@@ -41,7 +37,7 @@ input[type=text] {
 
 /* Submit button */
 input[type=submit] {
-    width: 9%;
+    width: 7%;
     background-color: rgba(17, 49, 31, 0.884);
     color: white;
     padding: 8px 10px;

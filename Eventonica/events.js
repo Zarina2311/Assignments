@@ -26,7 +26,6 @@ class EventRecommender {
     }
 
     deleteEvent(id) {
-    // Deletes the Event from the system
         let eventsLeft = this.events.filter(function (event) {
             return event.id !==id; 
         });
@@ -34,15 +33,13 @@ class EventRecommender {
     }
 
     findEventsByDate(date){
-    // Returns all events on a given date
         let allEvents = this.events.filter(function (event) {
             return event.date === date;
         });
             return allEvents;
     }
     
-    findEventsbyCategory(category){
-    // Returns all events in a given category
+    findEventsByCategory(category){
         let eventsByCategory = this.events.filter(function(event) {
             return event.category === category;
         });
@@ -67,7 +64,7 @@ class Event {
     }
 }
 
-// Jasmine test part
+// Jasmine test
 if (typeof module != 'undefined'){
     module.exports = { EventRecommender, User,  Event} 
 }
