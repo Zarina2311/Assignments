@@ -1,21 +1,18 @@
 <html>
 <head>
-    <script src="YOUR JS FILE HERE.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="jQuery-scripts.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 
 <body>
     <h1>Event Recommender</h1>
-
+    
     <h2>User Management</h2>
     <div>
         <h3>All Users</h3>
         <ul id="all-users">
-            <!-- Use jQuery to display all Users here -->
+            <!-- Using jQuery to display all Users here -->
         </ul>
-
+        
         <h3>Add User</h3>
         <form id="add-user">
             <label>User ID:</label>
@@ -24,30 +21,29 @@
             <label>User name:</label>
             <input type="text" id="add-user-name">
             <br/>
-            <!-- Add more form fields here -->
-            <input type="submit">
+            <input type="submit" id="add-user-submit">
         </form>
     </div>
-
+    
     <div>
         <h3>Delete User</h3>
         <form id="delete-user">
             <label>User ID:</label>
             <input type="text" id="delete-user-id">
             <br/>
-            <input type="submit">
+            <input type="submit" id="delete-user-id-submit">
         </form>
     </div>
-
+    
     <br/>
-
+    
     <h2>Event Management</h2>
     <div>
         <h3>All Events</h3>
-        <ul>
-            <!-- Use jQuery to display all Events here -->
+        <ul id="all-events">
+            <!-- Using jQuery to display all Events here -->
         </ul>
-
+        
         <h3>Add Event</h3>
         <form id="add-event">
             <label>Event ID:</label>
@@ -56,21 +52,26 @@
             <label>Event name:</label>
             <input type="text" id="add-event-name">
             <br/>
-            <!-- Add more form fields here -->
-            <input type="submit">
+            <label>Event date:</label>
+            <input type="text" id="add-event-date">
+            <br/>
+            <label>Event category:</label>
+            <input type="text" id="add-event-category">
+            <br/>
+            <input type="submit" id="add-event-submit">
         </form>
     </div>
-
+    
     <div>
         <h3>Delete Event</h3>
         <form id="delete-event">
             <label>Event ID:</label>
             <input type="text" id="delete-event-id">
             <br/>
-            <input type="submit">
+            <input type="submit" id="delete-event-submit">
         </form>
     </div>
-
+    
 </div>
 
 <br/>
@@ -82,11 +83,11 @@
         <label>Event date:</label>
         <input type="text" id="date-search-id">
         <br/>
-        <input type="submit">
+        <input type="submit" id="date-search-submit">
     </form>
     <h4>Results:</h4>
     <ol>
-        <!-- Use jQuery to add search results here-->
+        <!-- Using jQuery to add search results here-->
     </ol>
 </div>
 
@@ -100,7 +101,7 @@
     </form>
     <h4>Results:</h4>
     <ol>
-        <!-- Use jQuery to add search results here-->
+        <!-- Using jQuery to add search results here-->
     </ol>
 </div>
 
@@ -113,10 +114,13 @@
         <label>Event ID:</label>
         <input type="text" id="save-event-id">
         <br/>
-        <input type="submit">
+        <input type="submit" id="save-user-event-submit">
     </form>
 </div>
 
+<script src="events.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+<script src="jQuery-scripts.js"></script>
 </body>
 
 </html>
