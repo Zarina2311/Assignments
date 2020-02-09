@@ -2,7 +2,7 @@ $(document).ready(() => {
     const eventRecommender = new EventRecommender(); 
     eventRecommender.addUser(23, "Zarina");
     eventRecommender.addUser(11, "Lada");
-    eventRecommender.addUser(84, "Ollo");
+    eventRecommender.addUser(94, "Ollie");
 
     function displayUsers() {
         let content = $('<ul>');
@@ -95,4 +95,31 @@ $(document).ready(() => {
         $("#delete-event").trigger("reset");
     });
 
+
+    // // //Adding more code here:
+    // function displayEventsByCategory() {
+    //     let content = $('<ul>');
+    //     for (let i=0; i<eventRecommender.events.length; i++) {
+    //         content.append("<li>" + eventRecommender.events[i].name + "</li>");
+    //     }
+    //     $("#all-events").html(content);
+    // }
+    // displayEventsByCategory();
+
+
+    // $("#category-search-submit").click(function(event){
+    //     event.preventDefault();
+    //     let id = $("#category-search-id").val();
+    //     eventRecommender.findEventsByCategory(id);
+    //     displayEventsByCategory();
+    
 });
+
+
+
+
+/*
+Search by date, Search by category, and Save event for user: Using what you learned so far, 
+figure out how to add the final three features to the app. Edit the list of users to show 
+the saved events for each of the users.
+*/

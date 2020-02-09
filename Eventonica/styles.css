@@ -1,4 +1,4 @@
-/*Background color of the web page*/
+/* Background color of the web page */
 body {
     background-color: rgba(204, 223, 197, 0.925);
     margin-left: 100px;
@@ -23,7 +23,7 @@ h3 {
     color:rgb(83, 134, 35);
 }
 
-/* Input placeholder */
+/* Input text */
 input[type=text] {
     width: 14%;
     padding: 5px;
@@ -47,4 +47,4 @@ input[type=submit] {
     cursor: pointer;
     outline:none;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
-  }
+}
