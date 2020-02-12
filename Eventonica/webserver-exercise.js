@@ -1,3 +1,5 @@
+//Pair programming assignment: Amy and Zarina
+
 let http = require("http");
 let fs = require("fs");
 
@@ -6,14 +8,14 @@ let server = http.createServer(function(req, res){
 
     if(req.url === "/home" || req.url === "/"){
         res.writeHead(200, {"Content-Type": "text/html"});
-        fs.createReadStream(__dirname + "/index.html").pipe(res);
-
+        fs.createReadStream(__Eventonica + "/index.html").pipe(res);
+    } else if(req.url === "/contact"){
+        res.writeHead(200, {"Content-Type": "text/html"});
+        fs.createReadStream(__Eventonica + "/contact.html").pipe(res);
+    } else {
+        res.writeHead(404, {"Content-Type": "text/html"});
+        fs.createReadStream(__Eventonica + "/404.html").pipe(res);
     }
-
-
-    // res.writeHead(200, {"Content-Type": "text/plain"});
-    // res.end("Hello World! This is my first webserver");
-
 });
 
 server.listen(3000, "127.0.0.1");
