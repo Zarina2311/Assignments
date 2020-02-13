@@ -14,8 +14,11 @@ class EventRecommender {
         this.users.push(newUser);
     }
 
-    saveUserEvent(user, event){
+    saveUserEvent(userID, eventID){
+        let user = this.users.find(item => item.id === Number(userID))
+        let event = this.events.find(item => item.id === Number(eventID));
         user.personalEvents.push(event);
+        console.log(user);
     }
 
     deleteUser(id) {
@@ -43,7 +46,7 @@ class EventRecommender {
         let eventsByCategory = this.events.filter(function(event) {
             return event.category === category;
         });
-            return eventsByCategory;
+            return eventsByCategory; // an array
     }
 }
 

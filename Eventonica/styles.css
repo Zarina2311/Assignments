@@ -37,8 +37,8 @@ input[type=text] {
 
 /* Submit button */
 input[type=submit] {
-    width: 7%;
     background-color: rgba(17, 49, 31, 0.884);
+    width: 7%;
     color: white;
     padding: 8px 10px;
     margin: 6px 0;

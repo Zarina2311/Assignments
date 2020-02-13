@@ -4,6 +4,11 @@ $(document).ready(() => {
     eventRecommender.addUser(11, "Lada");
     eventRecommender.addUser(94, "Ollie");
 
+    eventRecommender.addEvent(123, "Dance Lessons", "2020-02-19", "dance");
+    eventRecommender.addEvent(456, "Concert of JLo", "2020-03-08", "concert");
+    eventRecommender.addEvent(789, "Film Festival", "2020-04-23", "film");
+    eventRecommender.addEvent(290, "Art Crawl", "2020-04-17", "art");
+
     function displayUsers() {
         let content = $('<ul>');
         for (let i=0; i<eventRecommender.users.length; i++) {
@@ -95,31 +100,44 @@ $(document).ready(() => {
         $("#delete-event").trigger("reset");
     });
 
+    //Find events by date
+    function displayEventsByDate(searchResults) {
+        let content = $('<ul>');
+        for (let i=0; i<searchResults.length; i++) {
+            content.append("<li>" + searchResults[i].name + "</li>");
+        }
+        $("#event-date-results").html(content);
+    }
 
-    // // //Adding more code here:
-    // function displayEventsByCategory() {
-    //     let content = $('<ul>');
-    //     for (let i=0; i<eventRecommender.events.length; i++) {
-    //         content.append("<li>" + eventRecommender.events[i].name + "</li>");
-    //     }
-    //     $("#all-events").html(content);
-    // }
-    // displayEventsByCategory();
+    $("#date-search-submit").click(function(event){
+        event.preventDefault();
+        let query = $("#date-search-query").val();
+        let searchResults = eventRecommender.findEventsByDate(query);
+        displayEventsByDate(searchResults);
+    });
 
 
-    // $("#category-search-submit").click(function(event){
-    //     event.preventDefault();
-    //     let id = $("#category-search-id").val();
-    //     eventRecommender.findEventsByCategory(id);
-    //     displayEventsByCategory();
+    //Find events by category
+    function displayEventsByCategory(searchResults) {
+        let content = $('<ul>');
+        for (let i=0; i<searchResults.length; i++) {
+            content.append("<li>" + searchResults[i].name + "</li>");
+        }
+        $("#event-category-results").html(content);
+    }
+
+    $("#category-search-submit").click(function(event){
+        event.preventDefault();
+        let query = $("#category-search-query").val();
+        let searchResults = eventRecommender.findEventsByCategory(query);
+        displayEventsByCategory(searchResults);
+    });
     
+    //Save event for the user
+    $("#save-user-event-submit").click(function(event){
+        event.preventDefault();
+        let userID = $("#save-user-id").val();
+        let eventID = $("#save-event-id").val();
+        eventRecommender.saveUserEvent(userID, eventID);
+    });
 });
-
-
-
-
-/*
-Search by date, Search by category, and Save event for user: Using what you learned so far, 
-figure out how to add the final three features to the app. Edit the list of users to show 
-the saved events for each of the users.
-*/
