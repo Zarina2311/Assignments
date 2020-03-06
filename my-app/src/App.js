@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 const maxLength = 280;
-function Form({ posts, setPosts }) {
+export function Form({ posts, setPosts }) {
   const [remaining, setRemaining] = useState(maxLength);
 
   function updateCount(event){
@@ -49,7 +49,7 @@ function Form({ posts, setPosts }) {
   );
 }
 
-function App() {
+export default function App() {
   const [posts, setPosts] = useState([]);
 
   return <div>
@@ -67,5 +67,3 @@ function App() {
     </ul>
   </div>
 }
-
-export default App;
