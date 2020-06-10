@@ -1,3 +1,5 @@
+//Refactor Exercise
+
 //Exercise 1:
 
 //from
@@ -16,8 +18,8 @@ console.log(splitBill(10, 2));
 //Exercise 2:
 
 //from
-function countdown(StartngNumber, step) {
-  let countFromNum = StartngNumber + step;
+function countdown(StartingNumber, step) {
+  let countFromNum = StartingNumber + step;
   return function decrease() {
     countFromNum -= step;
     return countFromNum;
