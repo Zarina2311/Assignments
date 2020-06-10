@@ -1,23 +1,22 @@
-//Independent Practice
+//Independent Practice - Movie Night
 
-let potentialAtendees  = ["Priya", "Ming", "David", "Alex", "Breanna"];
+let potentialAtendees = ["Priya", "Ming", "David", "Alex", "Breanna"];
 
 function movieNight(listOfYeses) {
-    let confirmedAttendees =[];
+  let confirmedAttendees = [];
 
-if (listOfYeses.includes("David")) {
+  if (listOfYeses.includes("David")) {
     confirmedAttendees.push("David", "Alex");
-} else if (listOfYeses.includes("Ming") || listOfYeses.includes("Priya")) {
+  } else if (listOfYeses.includes("Ming") || listOfYeses.includes("Priya")) {
     confirmedAttendees.push("Ming", "Priya");
-}
-//possibly check for Priya - ??
-if (confirmedAttendees.length >=2) {
+  }
+
+  if (confirmedAttendees.length >= 2) {
     confirmedAttendees.push("Breanna");
-}
-    return confirmedAttendees;
+  }
+  return confirmedAttendees;
 }
 console.log(movieNight(["Priya", "David", "Alex"]));
-
 
 //order of importance
 //1. David
