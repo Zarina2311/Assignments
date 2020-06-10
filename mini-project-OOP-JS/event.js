@@ -1,49 +1,52 @@
 class Event {
-    constructor(name, description) {
-      this.name = name;
-      this.description = description;
-      this.availableTickets = [];
+  constructor(name, description) {
+    this.name = name;
+    this.description = description;
+    this.availableTickets = [];
+  }
+
+  addAvailableTickets(name, price) {
+    this.availableTickets.push(new TicketType(name, price));
+  }
+
+  allTickets() {
+    let result = "All Tickets: ";
+    for (let i = 0; i < this.availableTickets.length; i++) {
+      let ticket = this.availableTickets[i];
+      result += `${i}. ${ticket.name} ($${ticket.price})`;
     }
 
-    addAvailableTickets(name, price) {
-        this.availableTickets.push(new TicketType(name, price));
+    return result;
+  }
+
+  searchTickets(lowerPriceRange, upperPriceRange) {
+    let result = "Eligible tickets: ";
+    for (let i = 0; i < this.availableTickets.length; i++) {
+      let ticket = this.availableTickets[i];
+      if (ticket.price > lowerPriceRange && ticket.price < upperPriceRange) {
+        result += `${i}. ${ticket.name} ($${ticket.price})`;
+      }
     }
 
-    allTickets() {
-        let result = "All Tickets: ";
-        for (let i = 0; i < this.availableTickets.length; i++) {
-            let ticket = this.availableTickets[i];
-            result += `${i}. ${ticket.name} ($${ticket.price})`;
-        };
-
-        return result;
+    if (result === "") {
+      result = "No tickets available.";
     }
-    
-    searchTickets(lowerPriceRange, upperPriceRange) {
-        let result = "Eligible tickets: ";
-        for (let i = 0; i < this.availableTickets.length; i++) {
-            let ticket = this.availableTickets[i];
-            if (ticket.price > lowerPriceRange && ticket.price < upperPriceRange) {
-                result += `${i}. ${ticket.name} ($${ticket.price})`;
-            }
-        }
 
-        if (result === "") {
-            result = "No tickets available.";
-        }
-
-        return result;
-    }
+    return result;
+  }
 }
 
 class TicketType {
-    constructor(name,price){
-        this.name = name;
-        this.price = price;
-    }
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
 }
 
-const eventObj1 = new Event("KLOS Golden Gala", "An evening with hollywood vampires");
+const eventObj1 = new Event(
+  "KLOS Golden Gala",
+  "An evening with hollywood vampires"
+);
 const eventObj2 = new Event("Skillet & Sevendust", "Victorious war tour");
 const eventObj3 = new Event("Jenny Lewis", "On the line tour 2019");
 
@@ -62,15 +65,14 @@ const eventArray = new Array();
 // pushing multiple objects to an array at once
 eventArray.push(eventObj1, eventObj2, eventObj3);
 
-// to check whether the elements are pushed
-//console.log(eventArray);
+$(document).ready(function () {
+  let html = "";
+  $.each(eventArray, function (index, item) {
+    html += `<li>${item.name} - ${item.description} - ${item.searchTickets(
+      0,
+      101
+    )}</li>`;
+  });
 
-$(document).ready(function() {
-    let html = "";
-    $.each(eventArray, function(index, item) {
-
-        html+= `<li>${item.name} - ${item.description} - ${item.searchTickets(0, 101)}</li>`;
-    });
-    // insert final html into #event...
-    $("#event").html(html);
+  $("#event").html(html);
 });
