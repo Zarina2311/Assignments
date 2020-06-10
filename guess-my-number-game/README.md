@@ -1,4 +1,12 @@
-# guess-my-number-game
-Make a web page that generates a secret random number and the user can guess the number until they get it right. For each guess, the game should display whether the answer is higher, lower, or correct.
+## Guess My Secret Number Game
 
-https://zarina2311.github.io/guess-my-number-game/
+The game is written in JavaScript, HTML and CSS.
+
+You can play the game here: https://zarina2311.github.io/guess-my-number-game
+
+### Features include:
+
+- Game generates a secret random number
+- Users can guess the number until they get it right
+- Users can choose a range of numbers
+- For each guess, the game displays whether the answer is higher, lower, or correct
